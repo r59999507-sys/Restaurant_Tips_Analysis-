@@ -440,51 +440,65 @@ elif page == "📈 Charts":
 
 elif page == "ℹ️ About":
 
-    st.subheader("About This Project")
+    st.title("🍽️ Restaurant Tips Analysis")
 
-    st.write("🛠 Technologies Used")
+    with st.container(border=True):
 
-    st.write("✅ Python")
-    st.write("✅ NumPy")
-    st.write("✅ Pandas")
-    st.write("✅ Matplotlib")
-    st.write("✅ Seaborn")
-    st.write("✅ Streamlit")
+        st.subheader("About This Project")
 
-    st.markdown("---")
+        st.markdown("### 🛠 Technologies Used")
 
-    st.write("📊 Dataset: Tips Dataset from Seaborn")
+        st.markdown("""
+✅ Python
 
-    st.markdown("---")
+✅ NumPy
 
-    st.write("Features")
+✅ Pandas
 
-    st.write("✔ Dataset Preview")
-    st.write("✔ Statistical Analysis")
-    st.write("✔ NumPy Analysis")
-    st.write("✔ GroupBy Analysis")
-    st.write("✔ Interactive Filtering")
-    st.write("✔ Interactive Charts")
-    st.write("✔ Download Histogram")
+✅ Matplotlib
 
-    st.markdown("---")
+✅ Seaborn
 
-    st.markdown(
-        """
-        <div style='text-align:center;'>
+✅ Streamlit
+""")
 
-        <b>Developed by Coding Hub</b>
+        st.markdown("---")
 
-        <br><br>
+        st.markdown("### 📊 Dataset")
 
-        © 2026 All Rights Reserved
+        st.write("Tips Dataset from Seaborn")
 
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+        st.markdown("---")
 
-    st.success(
-        "Thank you for using Restaurant Tips Analysis Dashboard 💙"
-    )
-    
+        st.markdown("### ✨ Features")
+
+        st.markdown("""
+✔ Dataset Preview
+
+✔ Statistical Analysis
+
+✔ NumPy Analysis
+
+✔ GroupBy Analysis
+
+✔ Interactive Filtering
+
+✔ Interactive Charts
+
+✔ Download Histogram
+""")
+
+        st.markdown("---")
+
+        st.markdown(
+            """
+            <div style="text-align:center;">
+                <h4>Developed by Coding Hub</h4>
+                <p>© 2026 All Rights Reserved</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    st.success("Thank you for using Restaurant Tips Analysis Dashboard 💙")
+
