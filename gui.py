@@ -331,6 +331,110 @@ elif page == "📈 Charts":
         ]
 
     )
+    # -----------------------------
+    # Bar Chart
+    # -----------------------------
+    if chart == "Bar Chart":
+
+        avg_bill = tips.groupby("day")["total_bill"].mean()
+
+        fig, ax = plt.subplots(figsize=(8,5))
+
+        ax.bar(avg_bill.index, avg_bill.values)
+
+        ax.set_title("Average Total Bill by Day")
+        ax.set_xlabel("Day")
+        ax.set_ylabel("Average Total Bill")
+
+        st.pyplot(fig)
+
+    # -----------------------------
+    # Histogram
+    # -----------------------------
+    elif chart == "Histogram":
+
+        fig, ax = plt.subplots(figsize=(8,5))
+
+        ax.hist(tips["total_bill"], bins=20)
+
+        ax.set_title("Histogram of Total Bill")
+        ax.set_xlabel("Total Bill")
+        ax.set_ylabel("Frequency")
+
+        st.pyplot(fig)
+
+    # -----------------------------
+    # Scatter Plot
+    # -----------------------------
+    elif chart == "Scatter Plot":
+
+        fig, ax = plt.subplots(figsize=(8,5))
+
+        sns.scatterplot(
+            data=tips,
+            x="total_bill",
+            y="tip",
+            ax=ax
+        )
+
+        ax.set_title("Total Bill vs Tip")
+
+        st.pyplot(fig)
+
+    # -----------------------------
+    # Average Tip
+    # -----------------------------
+    elif chart == "Average Tip":
+
+        fig, ax = plt.subplots(figsize=(8,5))
+
+        sns.barplot(
+            data=tips,
+            x="day",
+            y="tip",
+            ax=ax
+        )
+
+        ax.set_title("Average Tip by Day")
+
+        st.pyplot(fig)
+
+    # -----------------------------
+    # Histogram with KDE
+    # -----------------------------
+    elif chart == "Histogram with KDE":
+
+        fig, ax = plt.subplots(figsize=(8,5))
+
+        sns.histplot(
+            data=tips,
+            x="total_bill",
+            kde=True,
+            ax=ax
+        )
+
+        ax.set_title("Histogram of Total Bill with KDE")
+
+        st.pyplot(fig)
+
+        fig.savefig(
+            "restaurant_tips_histogram.png",
+            dpi=300
+        )
+
+        with open(
+            "restaurant_tips_histogram.png",
+            "rb"
+        ) as file:
+
+            st.download_button(
+                label="📥 Download Histogram",
+                data=file,
+                file_name="restaurant_tips_histogram.png",
+                mime="image/png"
+            )
+            
+    
 
 # =====================================
 # ABOUT
