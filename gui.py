@@ -442,7 +442,7 @@ elif page == "ℹ️ About":
 
     # st.title("🍽️ Restaurant Tips Analysis")
 
-    st.markdown("---")
+    # st.markdown("---")
 
     st.subheader("About This Project")
 
