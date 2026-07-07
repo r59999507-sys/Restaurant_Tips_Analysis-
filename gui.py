@@ -440,13 +440,9 @@ elif page == "📈 Charts":
 
 elif page == "ℹ️ About":
 
-    # st.title("🍽️ Restaurant Tips Analysis")
-
-    # st.markdown("---")
-
     st.subheader("About This Project")
 
-    st.write(" 🛠 Technologies Used")
+    st.write("🛠 Technologies Used")
 
     st.write("✅ Python")
     st.write("✅ NumPy")
@@ -490,5 +486,5 @@ elif page == "ℹ️ About":
 
     st.success(
         "Thank you for using Restaurant Tips Analysis Dashboard 💙"
-    )    
-
+    )
+    
