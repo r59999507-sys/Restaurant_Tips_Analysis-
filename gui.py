@@ -440,7 +440,7 @@ elif page == "📈 Charts":
 
 elif page == "ℹ️ About":
 
-    st.title("🍽️ Restaurant Tips Analysis")
+    # st.title("🍽️ Restaurant Tips Analysis")
 
     with st.container(border=True):
 
