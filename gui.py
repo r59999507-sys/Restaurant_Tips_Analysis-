@@ -446,7 +446,7 @@ elif page == "ℹ️ About":
 
     st.subheader("About This Project")
 
-    st.write("This dashboard was developed using:")
+    st.write(" 🛠 Technologies Used")
 
     st.write("✅ Python")
     st.write("✅ NumPy")
@@ -457,11 +457,11 @@ elif page == "ℹ️ About":
 
     st.markdown("---")
 
-    st.write("**Dataset:** Tips Dataset from Seaborn")
+    st.write("** 📊 Dataset:** Tips Dataset from Seaborn")
 
     st.markdown("---")
 
-    st.write("**Features**")
+    st.write("** ✨Features**")
 
     st.write("✔ Dataset Preview")
     st.write("✔ Statistical Analysis")
