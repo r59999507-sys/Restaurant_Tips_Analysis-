@@ -434,61 +434,61 @@ elif page == "📈 Charts":
                 mime="image/png"
             )
             
-    
-
 # =====================================
 # ABOUT
 # =====================================
 
 elif page == "ℹ️ About":
 
-    st.header("About This Project")
+    st.title("🍽️ Restaurant Tips Analysis")
 
-    st.info("""
+    st.markdown("---")
 
-Restaurant Tips Analysis Dashboard
+    st.subheader("About This Project")
 
-Built using:
+    st.write("This dashboard was developed using:")
 
-✅ Python
+    st.write("✅ Python")
+    st.write("✅ NumPy")
+    st.write("✅ Pandas")
+    st.write("✅ Matplotlib")
+    st.write("✅ Seaborn")
+    st.write("✅ Streamlit")
 
-✅ NumPy
+    st.markdown("---")
 
-✅ Pandas
+    st.write("**Dataset:** Tips Dataset from Seaborn")
 
-✅ Matplotlib
+    st.markdown("---")
 
-✅ Seaborn
+    st.write("**Features**")
 
-✅ Streamlit
+    st.write("✔ Dataset Preview")
+    st.write("✔ Statistical Analysis")
+    st.write("✔ NumPy Analysis")
+    st.write("✔ GroupBy Analysis")
+    st.write("✔ Interactive Filtering")
+    st.write("✔ Interactive Charts")
+    st.write("✔ Download Histogram")
 
-----------------------------------------
+    st.markdown("---")
 
-Dataset:
+    st.markdown(
+        """
+        <div style='text-align:center;'>
 
-Tips Dataset from Seaborn
+        <b>Developed by Coding Hub</b>
 
-----------------------------------------
+        <br><br>
 
-Features
+        © 2026 All Rights Reserved
 
-✔ Dataset Preview
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
-✔ Statistics
+    st.success(
+        "Thank you for using Restaurant Tips Analysis Dashboard 💙"
+    )    
 
-✔ NumPy Analysis
-
-✔ GroupBy Analysis
-
-✔ Interactive Filtering
-
-✔ Interactive Charts
-
-✔ Download Histogram
-
-----------------------------------------
-
-Developed by Coding Hub
-
-    """)
-  
